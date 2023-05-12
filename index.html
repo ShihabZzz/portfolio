@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shihab</title>
+
+    <!-- favicon_io -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assests/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assests/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assests/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assests/favicon_io/site.webmanifest">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2d5787ea84.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <header>
+        <nav class="navigation-container root-container">
+            <h1 id="topMark">Shihab</h1>
+            <ul class="navlink-container">
+                <li><a href="#aboutMark">About</a></li>
+                <!-- <li><a href="">Blogs</a></li> -->
+                <!-- <li><a href="">Experince</a></li> -->
+                <!-- <li><a href="#experince" onclick="opentab('experince')">Experince</a></li> -->
+                <li><a href="#projectMark">Projects</a></li>
+                <!-- <li><a href="">Skills</a></li> -->
+                <li><a href="#contactMark">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- intro -->
+    <section class="intro-container root-container">
+        <div class="intro-banner-text">
+            <p>Hi, I'm</p>
+            <h1>Md. Shihab Uddin</h1>
+            <p><small>Curious | Open-minded</small></p>
+            <a href="assests/resume.pdf" download><button class="btn-style">Resume <i
+                        class="fa-solid fa-angle-down"></i></button></a>
+        </div>
+        <div class="intro-image-class">
+            <img src="assests/profile.png" alt="">
+        </div>
+    </section>
+
+    <!-- about  -->
+    <section class="about-container root-container">
+        <div class="about-text">
+            <h1 id="aboutMark">About Me</h1>
+            <p class="about-text-guidline">Hi, I'm Shihab. I love learning new things and I'm particularly interested in
+                Android app
+                development. I have experience in Linux systems and enjoy competitive programming. When
+                I'm not coding, I love hiking and spending time in nature.</p>
+        </div>
+        <div class="about-tab">
+            <div class="tab-tittles">
+                <p class="tab-text active-text" onclick="opentab('skills')"><i class="fa-solid fa-gears"></i> Skills</p>
+                <p class="tab-text" onclick="opentab('experience')"><i class="fa-solid fa-cubes"></i> Experience</p>
+                <p class="tab-text" onclick="opentab('education')"><i class="fas fa-university"></i> Education</p>
+            </div>
+            <div class="tab-contents active-contents" id="skills">
+                <ul>
+                    <li><span><i class="fas fa-code"></i> Programming Language</span><br>C, C++, Python, Kotlin</li>
+                    <li><span><i class="fas fa-code-branch"></i> Version Control Systems</span><br>Git</li>
+                    <li><span><i class="fas fa-database"></i> Database Management</span><br>MySQL</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+                <ul>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects -->
+    <section class="projects-container root-container">
+        <h1 id="projectMark">Projects</h1>
+        <div class="project-cards">
+            <div>
+                <h3><small>Connect Four</small></h3>
+                <p><small>Four is a fun game for two players. The players place discs on a vertical board that is 7
+                        columns wide and 6 rows tall. The goal of the game is to be the first to form a horizontal,
+                        vertical, or diagonal line of four discs.</small></p>
+                <p class="cards-text">See on <a href="https://github.com/ShihabZzz/Connect_Four.git"><button
+                            class="btn-style">GitHub</button></a></p>
+            </div>
+
+            <div>
+                <h3><small>Custom Firmware</small></h3>
+                <p><small>LineageOS Android Distribution - for Xiaomi Redmi 4 Prime</small></p>
+                <p class="cards-text">See on <a href="https://github.com/ShihabZzz/Releases.git"><button
+                            class="btn-style">GitHub</button></a></p>
+            </div>
+
+            <div>
+                <h3><small>More coming soon...</small></h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact-container root-container">
+        <div class="conatct-text">
+            <h1 id="contactMark">Contact Me</h1>
+            <p><i class="fas fa-map-marker-alt"></i>Chittagong, Bangladesh</p>
+            <div class="contact-icons">
+                <a href="https://github.com/ShihabZzz"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/md-shihab-uddin-riad-46553a146/"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="mailto:shihab.riadn@gmail.com"><i class="fas fa-envelope-open"></i></a>
+            </div>
+        </div>
+        <div class="conatct-form">
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn-style">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer-container root-container">
+        <hr>
+        <div class="footer-flex">
+            <p class="footer-text">&copy; 2023 Md. Shihab Uddin</p>
+            <p class="footer-text"><a href="#topMark">To the top <i class="fas fa-arrow-up"></i></a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

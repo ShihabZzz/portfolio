@@ -1,0 +1,273 @@
+/* universal */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    /* background-color: blue; */
+}
+
+.root-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.btn-style {
+    border: none;
+    border-radius: 15px;
+    width: 20%;
+    height: 30px;
+    background-color: #64c6ff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-style:hover {
+    background-color: #6C63FF;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* navigation */
+
+.navigation-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.navigation-container h1 {
+    color: #6C63FF;
+}
+
+.navlink-container {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.navlink-container a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.navlink-container a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #6C63FF;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.navlink-container a:hover::after {
+    width: 75%;
+}
+
+
+
+/* intro-section */
+
+.intro-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.intro-banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+}
+
+.intro-image-class {
+    padding-top: 50px;
+}
+
+.intro-image-class img {
+    /* border-radius: 50%; 
+    width: 62%; */
+    width: 100%;
+}
+
+/* about */
+
+.about-container {
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+}
+
+.about-text-guidline {
+    margin-top: 30px;
+    background-color: #eff3ff;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.tab-tittles {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.tab-text {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-text::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #6C63FF;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-text.active-text::after {
+    width: 100%;
+}
+
+.tab-contents ul li {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #536DFE;
+    font-weight: bold;
+    font-size: 300;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-contents {
+    display: block;
+}
+
+/* projects */
+
+.projects-container {
+    margin-top: 50px;
+}
+
+.project-cards {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+}
+
+.project-cards div {
+    /* background-color: #c1d0ff; */
+    background-color: #eff3ff;
+    padding: 40px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.project-cards h3 {
+    margin-bottom: 5px;
+}
+
+.cards-text {
+    margin-top: 25px;
+}
+
+.cards-text a {
+    color: black;
+    text-decoration: none;
+}
+
+.project-cards div:hover {
+    transform: translateY(-10px);
+}
+
+/* contact */
+
+.contact-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.conatct-text p {
+    margin-top: 25px;
+}
+
+.conatct-text p i {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.contact-icons {
+    margin-top: 25px;
+}
+
+.contact-icons a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 15px;
+    color: black;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.contact-icons a:hover {
+    color: #6C63FF;
+    transform: translateY(-5px);
+}
+
+.conatct-form form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 2px solid #6C63FF;
+    /* background-color: #262626; */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+/* footer */
+
+.footer-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.footer-text a {
+    text-decoration: none;
+    color: grey;
+}
